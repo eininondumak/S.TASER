@@ -3,7 +3,7 @@
 DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investigations
 
 
-### Scenarios
+### Experimental scenarios
 * Timestamp is UTC
 
 #### 1. Artifact structure
@@ -53,7 +53,21 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 |01:30|Decrypt STF's encrypted location data|s3_location_history <br> s3_location_history_dec|
 
 #### 4. Registered tracking tag deletion
+1. Perform experiments following Scenario 1
 
+|Time|Action|Etc|
+|------|---|---|
+|2024 12-04 05:14 - 05:15|Retrieve location data||
+|05:20 - 05:29|Acquire smartphone image|s4-1|
+|05:35|Delete the tag (SmartTag 2 black)|SmartTag 2 black (Y48081056402)|
+|05:37 - 05:38|Acquire smartphone image|s4-2|
+|05:44 - 05:45|Re-register SmartTag 2 black with 'SmartTag 2 black re'|SmartTag 2 black re (CD50AB769464)|
+|05:47 - 09:50|Acquire smartphone image|s4-3|
+|05:52|Delete the tag (SmartTag 2 black re)||
+|05:55 - 05:57|Acquire smartphone image|s4-4|
+|06:04 - 06:05|Register a tracking tag and name it 'SmartTag 2 black2'|SmartTag 2 black2(Y48081198805)|
+|06:04 - 06:05|Register a tracking tag and name it 'SmartTag 2 black2'|SmartTag 2 black2(Y48081198805)|
+|07:18 - 07:20|Acquire smartphone image|s4-5|
 
 #### 5. Location data deletion
 
