@@ -35,14 +35,11 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 |13:43|Register a tracking tag and name it 'SmartTag 2 black2' |SM-A600N #4, SmartTag 2 black2 (Y48081198805)|
 |13:44|Install STF, Retrieve location data|SM-A600N #4|
 |13:55 - 14:10|Acquire SM-A600N #4 image|s0-old-black2|
-
-
-|05:19|Register a tracking tag and name it 'SST' |SOLUM SMART TAG (C40D6666661C) <br> * Register twice due to registration error|
-|05:20|Retrieve location data||
-
-|05:28 - 06:42|Move with tags (SmartTag 2 black, SST)||
-|11:50 - 11:58|Acquire smartphone image|20241203-S1-default|
-
+|13:56 - 14:03|Install ST, SF|SM-A600N #5|
+|14:03 - 14:05|Install STF, Retrieve location data|SM-A600N #5|
+|14:12 - 14:29|Acquire SM-A600N #5 image|s0-latest-mirror|
+|14:32 - 14:34|Retrieve location data|SM-A600N #3|
+|14:41 - 14:57|Acquire SM-A600N #3 image|s0-latest-white-2|
 
 
 #### 2. Tracking tag registraion 
@@ -142,6 +139,31 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 
 
 #### 8. Application synchronization
+1. Perform experiments following Scenario 1
+1. Device: SM-A600N #3 with latest applications (kpiatest4@gmail.com)
+1. Device: SM-A600N #5 with latest applications (kpiatest4@gmail.com)
+
+|Time|Action|Etc|
+|------|---|---|
+|2024 12-03 01:14 - 03:40|Move with tags (SmartTag 2 white, SmartTag 2 black2) |SmartTag 2 white (Y46152378105) <br> SmartTag 2 black (Y48081056402)|
+|04:36 - 06:42|Move with tags (SmartTag 2 white, SmartTag 2 black2) |SmartTag 2 white (Y46152378105) <br> SmartTag 2 black (Y48081056402)|
+|11:27 - 11:30|Retrieve location data|SM-A600N #3, SM-A600N #5|
+|2024 12-03 23:33 - 23:49|Acquire SM-A600N #3 image|s8-device1-1|
+|2024 12-03 23:53 - 12-04 00:08|Acquire SM-A600N #5 image|s8-device2-1|
+|12-03 00:34|Delete location data of SM-A600N #3 with STF|SM-A600N #3|
+|00:34 - 00:36|Refresh Smartphones|SM-A600N #3, #5|
+|00:40 - 00:55|Acquire SM-A600N #3 image|s8-device1-2|
+|00:59 - 01:14|Acquire SM-A600N #5 image|s8-device2-2|
+|01:17|Delete location data of SM-A600N #5 with SF|SM-A600N #5|
+|01:18 - 01:20|Refresh Smartphones|SM-A600N #3, #5|
+|01:23 - 01:38|Acquire SM-A600N #3 image|s8-device1-3|
+|01:45 - 02:00|Acquire SM-A600N #5 image|s8-device2-3|
+|02:03|Delete 'SmartTag 2 black 2' of SM-A600N #3|SM-A600N #3|
+|01:03 - 01:04|Refresh Smartphones|SM-A600N #3, #5|
+|04:26 - 04:41|Acquire SM-A600N #3 image|s8-device1-3|
+|04:44 - 04:59|Acquire SM-A600N #5 image|s8-device2-3|
+
+
 
 
 
