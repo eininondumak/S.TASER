@@ -31,10 +31,12 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 |13:59|Move with tags|S2-2.har|
 |2024 11-30 14:12 - <br> 2024 11-31 15:20|Move with the tag (SmartTag 1 black)||
 |2024 11-31 15:45 - 15:46|Register a tracking tag and name it 'SmartTag 1 white'|SmartTag 1 white (CD50AB769464)|
+|00:13|Retrieve location data||
 |00:14|Acquire smartphone image|241201_S2_oneconncect-1|
 |00:16|Hard-reset the SmartTag 1 white||
 |00:16|Re-register SmartTag 1 white with 'SmartTag 1 white 2'|SmartTag 1 white 2 (CD50AB769464)|
 |00:41 - 07:56|Move with tags (SmartTag 1 black, SmartTag 1 white 2)||
+|09:24|Retrieve location data||
 |09:25|Acquire smartphone image|241201_S2_oneconnect-2|
 
 #### 3. Location data retrieval
@@ -42,13 +44,14 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 
 |Time|Action|Etc|
 |------|---|---|
-|2024 11-30 13:54 - 13:56|Register a tracking tag and name it 'SmartTag 1 black'|SmartTag 1 black (EF1FC40EB471)|
+|2024 12-01 01:00|Install applications and log-in the account||
 |13:56 - 13:57|Install STF||
 |13:54 - 13:57|Capture network data during the registration |S2-1.har|
 |13:58 - 13:59|Try registering another tag that was already registered in other account|Registration fail|
 |13:59|Move with tags|S2-2.har|
 |2024 11-30 14:12 - <br> 2024 11-31 15:20|Move with the tag (SmartTag 1 black)||
 |2024 11-31 15:45 - 15:46|Register a tracking tag and name it 'SmartTag 1 white'|SmartTag 1 white (CD50AB769464)|
+|00:12|Acquire smartphone image|241201_S2_oneconncect-1|
 |00:14|Acquire smartphone image|241201_S2_oneconncect-1|
 |00:16|Hard-reset the SmartTag 1 white||
 |00:16|Re-register SmartTag 1 white with 'SmartTag 1 white 2'|SmartTag 1 white 2 (CD50AB769464)|
