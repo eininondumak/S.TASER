@@ -83,7 +83,13 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 |07:38 - 07:40|Acquire smartphone image|s5-2|
 
 #### 6. Account logout
+1. Perform experiments following Scenario 5
 
+|Time|Action|Etc|
+|------|---|---|
+|2024 12-04 07:47|Account logout||
+|07:47|Refresh application (ST,STF,SF)||
+|07:49 - 07:51|Acquire smartphone image|s6-1|
 
 #### 7. Service withdrawal
 
