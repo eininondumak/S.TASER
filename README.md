@@ -19,6 +19,32 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 |05:28 - 06:42|Move with tags (SmartTag 2 black, SST)||
 |11:50 - 11:58|Acquire smartphone image|20241203-S1-default|
 
+---
+
+1. Device: SM-A600N #3 with latest applications (kpiatest4@gmail.com)
+1. Device: SM-A600N #4 with old applications (kpiatest4@gmail.com)
+1. Device: SM-A600N #5 with latest applications (kpiatest4@gmail.com)
+
+|Time|Action|Etc|
+|------|---|---|
+|2024 12-02 13:18 - 13:24|Install ST, SF|SM-A600N #3|
+|13:24 - 13:25|Register a tracking tag and name it 'SmartTag 2 white' |SM-A600N #3, SmartTag 2 white (Y46152378105)|
+|13:26 - 13:27|Install STF, Retrieve location data|SM-A600N #3|
+|13:30 - 13:50|Acquire SM-A600N #3 image|s0-latest-white|
+|13:40 - 13:41|Install ST, SF|SM-A600N #4|
+|13:43|Register a tracking tag and name it 'SmartTag 2 black2' |SM-A600N #4, SmartTag 2 black2 (Y48081198805)|
+|13:44|Install STF, Retrieve location data|SM-A600N #4|
+|13:55 - 14:10|Acquire SM-A600N #4 image|s0-old-black2|
+
+
+|05:19|Register a tracking tag and name it 'SST' |SOLUM SMART TAG (C40D6666661C) <br> * Register twice due to registration error|
+|05:20|Retrieve location data||
+
+|05:28 - 06:42|Move with tags (SmartTag 2 black, SST)||
+|11:50 - 11:58|Acquire smartphone image|20241203-S1-default|
+
+
+
 #### 2. Tracking tag registraion 
 1. Device: SM-A600N #1 (Rooted) with the account (kpiatest2@gmail.com)
 
@@ -39,6 +65,7 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 |09:24|Retrieve location data||
 |09:25|Acquire smartphone image|241201_S2_oneconnect-2|
 
+
 #### 3. Location data retrieval
 1. Device: SM-A600N #2 (Rooted) with the account (kpiatest2@gmail.com)
 
@@ -51,6 +78,7 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 |01:16|Acquire smartphone image|241201_S3_oneconncect|
 |01:16|Acquire smartphone image|241201_S3_find|
 |01:30|Decrypt STF's encrypted location data|s3_location_history <br> s3_location_history_dec|
+
 
 #### 4. Registered tracking tag deletion
 1. Perform experiments following Scenario 1
@@ -70,6 +98,7 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 |07:17|Retrieve location data||
 |07:18 - 07:20|Acquire smartphone image|s4-5|
 
+
 #### 5. Location data deletion
 1. Perform experiments following Scenario 4
 
@@ -82,6 +111,7 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 |07:36|Retrieve location data||
 |07:38 - 07:40|Acquire smartphone image|s5-2|
 
+
 #### 6. Account logout
 1. Perform experiments following Scenario 5
 
@@ -91,7 +121,24 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 |07:47|Refresh application (ST,STF,SF)||
 |07:49 - 07:51|Acquire smartphone image|s6-1|
 
+
 #### 7. Service withdrawal
+1. Perform experiments following Scenario 6
+1. Device: SM-S901N with the account (kpiatest7@gmail.com)
+1. Before the experiment, Delete all registered tags with the account
+1. Delete applications (ST,STF,SF)
+
+
+|Time|Action|Etc|
+|------|---|---|
+|2024 12-04 10:00 - 10:07|Install ST, SF||
+|10:07 - 10:08|Register a tracking tag and name it 'SmartTag 2 black'|SmartTag 2 black (Y48081056402)|
+|10:08 - 10:09|Install STF||
+|10:14|Retrieve location data||
+|10:15 - 10:17|Acquire smartphone image|s7-1|
+|10:20|Service withdrawal||
+|10:21|Refresh application (ST,STF,SF)||
+|10:23 - 10:24|Acquire smartphone image|s7-2|
 
 
 #### 8. Application synchronization
