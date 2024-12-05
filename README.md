@@ -50,8 +50,7 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 |01:06 - 01:14|Capture network data during the location data retrieval|S3-oneconnect.har <br> S3-find.har|
 |01:16|Acquire smartphone image|241201_S3_oneconncect|
 |01:16|Acquire smartphone image|241201_S3_find|
-|01:30|Acquire smartphone image|241201_S3_find|
-
+|01:30|Decrypt STF's encrypted location data|s3_location_history <br> s3_location_history_dec|
 
 #### 4. Registered tracking tag deletion
 
