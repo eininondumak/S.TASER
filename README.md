@@ -45,18 +45,13 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 |Time|Action|Etc|
 |------|---|---|
 |2024 12-01 01:00|Install applications and log-in the account||
-|13:56 - 13:57|Install STF||
-|13:54 - 13:57|Capture network data during the registration |S2-1.har|
-|13:58 - 13:59|Try registering another tag that was already registered in other account|Registration fail|
-|13:59|Move with tags|S2-2.har|
-|2024 11-30 14:12 - <br> 2024 11-31 15:20|Move with the tag (SmartTag 1 black)||
-|2024 11-31 15:45 - 15:46|Register a tracking tag and name it 'SmartTag 1 white'|SmartTag 1 white (CD50AB769464)|
-|00:12|Acquire smartphone image|241201_S2_oneconncect-1|
-|00:14|Acquire smartphone image|241201_S2_oneconncect-1|
-|00:16|Hard-reset the SmartTag 1 white||
-|00:16|Re-register SmartTag 1 white with 'SmartTag 1 white 2'|SmartTag 1 white 2 (CD50AB769464)|
-|00:41 - 07:56|Move with tags (SmartTag 1 black, SmartTag 1 white 2)||
-|09:25|Acquire smartphone image|241201_S2_oneconnect-2|
+|01:06 - 01:14|Install ST, STF and Retrieve location data||
+|01:06 - 01:14|Install SF and Retrieve location data||
+|01:06 - 01:14|Capture network data during the location data retrieval|S3-oneconnect.har <br> S3-find.har|
+|01:16|Acquire smartphone image|241201_S3_oneconncect|
+|01:16|Acquire smartphone image|241201_S3_find|
+|01:30|Acquire smartphone image|241201_S3_find|
+
 
 #### 4. Registered tracking tag deletion
 
