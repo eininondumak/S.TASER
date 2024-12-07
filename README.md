@@ -150,11 +150,11 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 |11:27 - 11:30|Retrieve location data|SM-A600N #3, SM-A600N #5|
 |2024 12-03 23:33 - 23:49|Acquire SM-A600N #3 image|s8-device1-1|
 |2024 12-03 23:53 - 12-04 00:08|Acquire SM-A600N #5 image|s8-device2-1|
-|12-03 00:34|Delete location data of SM-A600N #3 with STF|SM-A600N #3|
+|12-03 00:34|Delete location data of SM-A600N #3 with STF|SM-A600N #3, SmartTag 2 white|
 |00:34 - 00:36|Refresh Smartphones|SM-A600N #3, #5|
 |00:40 - 00:55|Acquire SM-A600N #3 image|s8-device1-2|
 |00:59 - 01:14|Acquire SM-A600N #5 image|s8-device2-2|
-|01:17|Delete location data of SM-A600N #5 with SF|SM-A600N #5|
+|01:17|Delete location data of SM-A600N #5 with SF|SM-A600N #5, SmartTag 2 black2|
 |01:18 - 01:20|Refresh Smartphones|SM-A600N #3, #5|
 |01:23 - 01:38|Acquire SM-A600N #3 image|s8-device1-3|
 |01:45 - 02:00|Acquire SM-A600N #5 image|s8-device2-3|
