@@ -91,7 +91,7 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 |05:52|Delete the tag (SmartTag 2 black re)||
 |05:55 - 05:57|Acquire smartphone image|s4-4|
 |06:04 - 06:05|Register a tracking tag and name it 'SmartTag 2 black2'|SmartTag 2 black2 (Y48081198805)|
-|----------|Move with tags (SST, SmartTag 2 black2)||
+|06:34 - 07:13|Move with tags (SST, SmartTag 2 black2)||
 |07:17|Retrieve location data||
 |07:18 - 07:20|Acquire smartphone image|s4-5|
 
