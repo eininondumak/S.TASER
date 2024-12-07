@@ -101,7 +101,7 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 
 |Time|Action|Etc|
 |------|---|---|
-|2024 12-04 07:29|Delete the 'SmartTag 2 black's location data with STF||
+|2024 12-04 07:29|Delete the 'SmartTag 2 black2's location data with STF||
 |07:29|Retrieve location data||
 |07:32 - 07:34|Acquire smartphone image|s5-1|
 |07:36|Delete the 'SST's location data with SF||
