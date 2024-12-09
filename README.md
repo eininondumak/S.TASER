@@ -2,9 +2,15 @@
 
 DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investigations
 
+### 1. Samsung tracking tags
 
-### Experimental scenarios
 
+
+### 2. Applications
+
+
+
+### 2. Experimental scenarios
 
 
 
@@ -18,3 +24,20 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 |6|[Account logout](https://github.com/eininondumak/S.TASER/blob/main/Scenarios/6.md#6-account-logout)|Account logout through ST|
 |7|[Service withdrawal](https://github.com/eininondumak/S.TASER/blob/main/Scenarios/7.md#7-service-withdrawal)|Withdrawing from the SmartThings service through ST|
 |8|[Application synchronization](https://github.com/eininondumak/S.TASER/blob/main/Scenarios/8.md#8-application-synchronization)|Comparison of results after location data deletion and STF and SF synchronization in multi-device environment|
+
+
+### 4. Artifacts table 
+
+
+
+
+### 5. Location data
+
+
+
+
+### 6. 
+
+
+
+
