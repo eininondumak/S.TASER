@@ -409,8 +409,8 @@ def get_information_tag(path, dBfile, outfile, uuid, deleted):
 
 
             outfile.write(f"\nTag uuid: {uuid}, status: recovered\n")
-            outfile.write(f"Recovered Method: backup data\n")
-            outfile.write(f"Tag name: {tagname}\n")
+            outfile.write(f"Recover Method: backup data\n")
+            outfile.write(f"Tag label: {tagname}\n")
             outfile.write(f"Tag model: {tagmodel}\n")
             outfile.write(f"Tag mnId: {tagmnid}, setupId: {tagsetupid}\n")
             outfile.write(f"Tag identifier: {tagidentifier}\n")
@@ -457,8 +457,8 @@ def get_information_tag(path, dBfile, outfile, uuid, deleted):
                     print("Error during parsing logdata")
 
                 outfile.write(f"\nTag uuid: {uuid}, status: recovered\n")
-                outfile.write(f"Recovered Method: log data\n")
-                outfile.write(f"Tag name: {tagname}\n")
+                outfile.write(f"Recover Method: log data\n")
+                outfile.write(f"Tag label: {tagname}\n")
                 outfile.write(f"Tag model: {tagmodel}\n")
                 outfile.write(f"Tag mnId: {tagmnid}, setupId: {tagsetupid}\n")
                 outfile.write(f"Tag identifier: {tagidentifier}\n")
@@ -472,8 +472,8 @@ def get_information_tag(path, dBfile, outfile, uuid, deleted):
                 if logone is None:
                     #Fail because of no webcache
                     outfile.write(f"\nTag uuid: {uuid}, status: deleted\n")
-                    outfile.write(f"Recovered Method: pattern\n")
-                    outfile.write(f"Tag name: {tagname}\n")
+                    outfile.write(f"Recover Method: pattern\n")
+                    outfile.write(f"Tag label: {tagname}\n")
                     outfile.write(f"Tag model: {tagmodel}\n")
                     outfile.write(f"Tag mnId: {tagmnid}, setupId: {tagsetupid}\n")
                     outfile.write(f"Tag identifier: {tagidentifier}\n")
@@ -503,8 +503,8 @@ def get_information_tag(path, dBfile, outfile, uuid, deleted):
                                     tagidentifier = log[4].split(',')[3]
 
                         outfile.write(f"\nTag uuid: {uuid}, status: recovered\n")
-                        outfile.write(f"Recovered Method: pattern\n")
-                        outfile.write(f"Tag name: {tagname}\n")
+                        outfile.write(f"Recover Method: pattern\n")
+                        outfile.write(f"Tag label: {tagname}\n")
                         outfile.write(f"Tag model: {tagmodel}\n")
                         outfile.write(f"Tag mnId: {tagmnid}, setupId: {tagsetupid}\n")
                         outfile.write(f"Tag identifier: {tagidentifier}\n")
@@ -512,8 +512,8 @@ def get_information_tag(path, dBfile, outfile, uuid, deleted):
                     else:
                     # Not found 'Register from webcache' in infotype -> fail                            
                         outfile.write(f"\nTag uuid: {uuid}, status: deleted\n")
-                        outfile.write(f"Recovered Method: pattern\n")
-                        outfile.write(f"Tag name: {tagname}\n")
+                        outfile.write(f"Recover Method: pattern\n")
+                        outfile.write(f"Tag label: {tagname}\n")
                         outfile.write(f"Tag model: {tagmodel}\n")
                         outfile.write(f"Tag mnId: {tagmnid}, setupId: {tagsetupid}\n")
                         outfile.write(f"Tag identifier: {tagidentifier}\n")
@@ -531,7 +531,7 @@ def get_information_tag(path, dBfile, outfile, uuid, deleted):
         registrationTime = taginfo[0]
 
         outfile.write(f"\nTag uuid: {uuid}, status: live\n")
-        outfile.write(f"Tag name: {tagname}\n")
+        outfile.write(f"Tag label: {tagname}\n")
         outfile.write(f"Tag model: {tagmodel}\n")
         outfile.write(f"Tag mnId: {tagmnid}, setupId: {tagsetupid}\n")
         outfile.write(f"Tag identifier: {tagidentifier}\n")
