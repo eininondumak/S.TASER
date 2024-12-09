@@ -17,9 +17,9 @@
 
    > python 241209_S.TASER.py -s com.samsung.android.oneconnect -f com.samsung.android.app.find -o ./output
 
- 2. Then program requires sqlite DB name for storing artifacts > s4-1.db (anything is ok)
+1. Then program requires sqlite DB name for storing artifacts > s4-1.db (anything is ok)
 
- 3. If the tool succussfully finish in output directory, you can find results (txt, db, html)
+1. If the tool succussfully finish in output directory, you can find results (txt, db, html)
    
                                      
 
