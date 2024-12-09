@@ -164,8 +164,6 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 |04:44 - 04:59|Acquire SM-A600N #5 image|s8-device2-3|
 
 
-### Artifact details
-* 
 
 
 
