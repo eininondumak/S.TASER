@@ -76,6 +76,8 @@
 |find-sdk (FmeAppData) <br> * Encrypted|○||||||○|
 * app-database.db and find-sdk are artifacts of SF, The others are artifacts of ST/STF
 
+* Raw data is [here]
+
 <br>
 
 ### 5. Location data
@@ -128,11 +130,14 @@ To verify the accuracy of the artifacts related to the tag's location informatio
 * Blue: Clustered tag location data, Green: GPS
 <img src = "/picture/tag_gps3.png" width='60%' height='60%'>
 
+* Raw data is [here]
 
 ### 6. Network data
 
 * In scenarios 2 and 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
 
 <img src = "/picture/locations.png" width='60%' height='60%'>
+
+* Raw data is [here]
 
 
