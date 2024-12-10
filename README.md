@@ -28,11 +28,11 @@
 
 * Tag registration in [SmartThings](picture/Tag%20registration.jpg)
 
-* Location data retrieval in [SmartThings Find/Samsugn Find](picture/SmartThings%20Find.jpg)
+* Location data retrieval in [SmartThings Find/Samsung Find](picture/SmartThings%20Find.jpg)
 
 * Tag deletion in [SmartThings](picture/Tag%20deletion.jpg)
 
-* Location deletion in [SmartThings Find/Samsugn Find](picture/Location%20deletion%20SF.jpg)
+* Location deletion in [SmartThings Find/Samsung Find](picture/Location%20deletion%20SF.jpg)
 
 * Account logout in [SmartThings](picture/Sign%20out.jpg)
 
@@ -110,16 +110,28 @@ The location information in SF is stored in the item_history table, containing t
 
 To verify the accuracy of the artifacts related to the tag's location information, GPS data was collected separately while the tags were in motion. The comparison of the location information analyzed in Scenarios 3 and 8 with GPS data from the same time periods is shown below. The analysis results accurately reflect the actual movement of the tags.
 
-##### 1. Scenario 3
+* GPS data was collected every 2 seconds. The GPS data collected within a 5-second window before and after the timestamp of the analyzed location information was displayed on the map.
 
-<img src = "/picture/locations.png" width='60%' height='60%'>
+#### 1. Scenario 3
 
+* Blue: Clustered tag location data, Green: GPS
+<img src = "/picture/tag_gps1.png" width='60%' height='60%'>
+<br>
 
-<img src = "/picture/locations.png" width='60%' height='60%'>
+* Blue: Unclustered tag location data, Green: GPS
+<img src = "/picture/tag_gps2.png" width='60%' height='60%'>
+<br>
 
+* Blue: Clustered tag location data, Green: Unclustered tag location data
+<img src = "/picture/tag_tag.png" width='60%' height='60%'>
+<br>
 
+#### 1. Scenario 8
 
-##### 1. Scenario 8
+* Blue: Clustered tag location data, Green: GPS
+<img src = "/picture/tag_gps3.png" width='60%' height='60%'>
+<br>
+
 
 
 
