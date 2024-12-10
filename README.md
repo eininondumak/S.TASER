@@ -53,6 +53,7 @@
 |7|[Service withdrawal](https://github.com/eininondumak/S.TASER/blob/main/Scenarios/7.md#7-service-withdrawal)|Withdrawing from the SmartThings service through ST|
 |8|[Application synchronization](https://github.com/eininondumak/S.TASER/blob/main/Scenarios/8.md#8-application-synchronization)|Comparison of results after location data deletion and STF and SF synchronization in multi-device environment|
 
+* Raw data is [here]
 <br>
 
 ## 4. Artifacts structure of paper-proposal version
@@ -75,8 +76,6 @@
 |app-database.db (DeviceDomain)|○||||||○|
 |find-sdk (FmeAppData) <br> * Encrypted|○||||||○|
 * app-database.db and find-sdk are artifacts of SF, The others are artifacts of ST/STF
-
-* Raw data is [here]
 
 <br>
 
