@@ -2,6 +2,8 @@
 
 DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investigations
 
+---
+
 ### 1. Samsung tracking tags
 
 
@@ -12,10 +14,19 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 
 ### 2. Applications
 
+|Name|Paper proposal Ver.|Camera-ready Ver.|Etc|
+|---|---|---|---|
+|SmartThings (ST)|1.8.18.21|1.8.21.28|Rooting detection adpoted|
+|SmartThings Find (STF)|1.8.21.28|1.8.27-10||
+|Samsubg Find (SF)|1.3.12|1.4.00.10||
+
+
+
+
 
 #### * Applications' functions
 
-* Tag registration in [SmartThings](picture/Leave%20service.jpg)
+* Tag registration in [SmartThings](picture/Tag%20registration.jpg)
 
 * Location data retrieval in [SmartThings Find/Samsugn Find](picture/SmartThings%20Find.jpg)
 
@@ -26,8 +37,6 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 * Account logout in [SmartThings](picture/Sign%20out.jpg)
 
 * Service withdrawal in [SmartThings](picture/Leave%20service.jpg)
-
-
 
 
 ### 2. Experimental scenarios
