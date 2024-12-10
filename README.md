@@ -14,7 +14,7 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 
 #### General functions
 
-[toc]
+[사진](picture/Leave service.jpg)
 
 
 
