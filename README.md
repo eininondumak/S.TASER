@@ -17,7 +17,7 @@
 ## 2. Applications
 
 
-|Name|Paper proposal Ver.|Camera-ready Ver.|etc.|
+|Name|Paper-proposal Ver.|Camera-ready Ver.|etc.|
 |---|---|---|---|
 |SmartThings (ST)|1.8.18.21|1.8.21.28|Rooting detection adpoted|
 |SmartThings Find (STF)|1.8.21.28|1.8.27-10||
@@ -55,7 +55,7 @@
 
 <br>
 
-## 4. Artifacts structure of paper proposal version applications
+## 4. Artifacts structure of paper-proposal version
 
 
 |Database (Table)|deviceId|mnId|setupId|modelName|logId(identifier)|timestamp|GeoInfo|
@@ -83,6 +83,10 @@
 The structure of the location information database for STF and SF is almost identical.
 In the STF table structure, the location information is stored in the history column of the EncLocationHistory table in an encrypted form.
 The history column stores location information in JSON format, and the important fields (timestamp, geolocation) are as shown in the table below.
+
+
+
+
 
 #### * Key elements in history column 
 
