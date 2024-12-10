@@ -13,15 +13,15 @@ DFRWS EU 2025 - Samsung Tracking Tag Applicatino Forensics in Criminal Investiga
 ### 2. Applications
 
 
-#### Applications' functions
+#### * Applications' functions
 
 * Tag registration in [SmartThings](picture/Leave%20service.jpg)
 
 * Location data retrieval in [SmartThings Find/Samsugn Find](picture/SmartThings%20Find.jpg)
 
-* Tag deletion in [SmartThings](picture/Location%20deletion.jpg)
+* Tag deletion in [SmartThings](picture/Tag%20deletion.jpg)
 
-* Location deletion in [SmartThings Find/Samsugn Find](picture/Location%20deletion.jpg)
+* Location deletion in [SmartThings Find/Samsugn Find](picture/Location%20deletion%20SF.jpg)
 
 * Account logout in [SmartThings](picture/Sign%20out.jpg)
 
