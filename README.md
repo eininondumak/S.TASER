@@ -131,7 +131,7 @@ To verify the accuracy of the artifacts related to the tag's location informatio
 
 ### 6. Network data
 
-The structure of
+* In scenarios 2 and 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
 
 <img src = "/picture/locations.png" width='60%' height='60%'>
 
