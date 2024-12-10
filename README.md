@@ -84,6 +84,7 @@ The structure of the location information database for STF and SF is almost iden
 In the STF table structure, the location information is stored in the history column of the EncLocationHistory table in an encrypted form.
 The history column stores location information in JSON format, and the important fields (timestamp, geolocation) are as shown in the table below.
 
+<img src = "/picture/locations.png" width='60%' height='60%'>
 
 
 
@@ -110,6 +111,12 @@ The location information in SF is stored in the item_history table, containing t
 To verify the accuracy of the artifacts related to the tag's location information, GPS data was collected separately while the tags were in motion. The comparison of the location information analyzed in Scenarios 3 and 8 with GPS data from the same time periods is shown below. The analysis results accurately reflect the actual movement of the tags.
 
 ##### 1. Scenario 3
+
+<img src = "/picture/locations.png" width='60%' height='60%'>
+
+
+<img src = "/picture/locations.png" width='60%' height='60%'>
+
 
 
 ##### 1. Scenario 8
