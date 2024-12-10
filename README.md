@@ -129,5 +129,10 @@ To verify the accuracy of the artifacts related to the tag's location informatio
 <img src = "/picture/tag_gps3.png" width='60%' height='60%'>
 
 
+### 6. Network data
+
+The structure of
+
+<img src = "/picture/locations.png" width='60%' height='60%'>
 
 
