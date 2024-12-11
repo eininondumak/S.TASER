@@ -115,7 +115,7 @@ To verify the accuracy of the artifacts related to the tag's location informatio
 
 #### 1. Scenario 3
 
-* Blue: Clustered (Avg) tag location data, Green: GPS
+* Blue: Clustered (Avg.) tag location data, Green: GPS
 <img src = "/picture/tag_gps1.png" width='60%' height='60%'>
 
 * Blue: Unclustered tag location data, Green: GPS
