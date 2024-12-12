@@ -16,7 +16,7 @@
 ## 2. Applications
 
 
-|Name|Paper-proposal Ver.|Camera-ready Ver.|etc.|
+|Name|Proposal Ver.|Camera-ready Ver.|etc.|
 |---|---|---|---|
 |SmartThings (ST)|1.8.18.21|1.8.21.28|Rooting detection adpoted|
 |SmartThings Find (STF)|1.8.21.28|1.8.27-10||
