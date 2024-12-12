@@ -25,17 +25,10 @@
 
 ### * Applications' functions in the experiments
 
-* Tag registration in [SmartThings](picture/Tag%20registration.jpg)
 
-* Location data retrieval in [SmartThings Find/Samsung Find](picture/SmartThings%20Find.jpg)
-
-* Tag deletion in [SmartThings](picture/Tag%20deletion.jpg)
-
-* Location deletion in [SmartThings Find/Samsung Find](picture/Location%20deletion%20SF.jpg)
-
-* Account logout in [SmartThings](picture/Sign%20out.jpg)
-
-* Service withdrawal in [SmartThings](picture/Leave%20service.jpg)
+| <img src="picture/Tag%20registration.jpg" width="150"> | <img src="picture/SmartThings%20Find.jpg" width="150"> | <img src="picture/Tag%20deletion.jpg" width="150"> |  <img src="picture/Location%20deletion%20SF.jpg" width="150"> |  <img src="picture/Sign%20out.jpg" width="150"> |  <img src="picture/Leave%20service.jpg" width="150"> | 
+|-----------------------|----------------------------------|---------------------|------------------------------------|--------------------|----------------------------------|
+| Tag registration | Location data retrieval | Tag deletion | Location deletion | Account logout | Service withdrawal  |
 
 
 ## 3. Experimental scenarios and results
