@@ -107,10 +107,10 @@ In the STF table structure, the location information is stored in the history co
 
 The STF was decompiled using JADX, and the code for decrypting the location information was identified as shown in the figure below.
 
+<img src = "/picture/decryption.png" width='70%' height='70%'>
 
 
-
-#### Location_history decryption pesudo code
+#### * Location_history decryption pesudo code
 
 ```pseudo
 START
@@ -140,15 +140,13 @@ START
 
 END
 ```
-
 <br>
 
-Accessing data stored in the Androidkeystore is very challenging. For this reason, in Scenario 3, a Frida script was used on a rooted device to dynamically decrypt the location information stored on the smartphone.
+Accessing data stored in the Androidkeystore is very challenging. For this reason, in Scenario 3, the [Frida script] was used on a rooted device to dynamically decrypt the location information stored on the smartphone.
 
 The history column stores location information in JSON format, and the important fields (timestamp, geolocation) are as shown in the table below.
 
 <img src = "/picture/locations.png" width='60%' height='60%'>
-
 
 #### * Key elements in history column 
 
