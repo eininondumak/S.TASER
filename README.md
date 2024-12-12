@@ -51,7 +51,7 @@
 * Raw data is [here]
 <br>
 
-## 4. Artifacts structure of paper-proposal version
+## 4. Artifacts structure of the proposal version (ST: 1.8.18.21)
 
 
 |Database (Table)|deviceId|mnId|setupId|modelName|logId(identifier)|timestamp|GeoInfo|
