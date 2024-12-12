@@ -180,7 +180,7 @@ The location information in SF is stored in the item_history table, containing t
 
 To verify the accuracy of the artifacts related to the tag's location information, GPS data was collected separately while the tags were in motion. The comparison of the location information analyzed in Scenarios 3 and 8 with GPS data from the same time periods is shown below. The analysis results accurately reflect the actual movement of the tags.
 
-\* GPS data was collected every 2 seconds. The GPS data collected within a 5-second window before and after the timestamp of the analyzed location information was displayed on the map.
+\* GPS data was collected every 2 seconds. The GPS data within 5 seconds before and after the timestamp of the analyzed location information was displayed on the map.
 
 #### 1. Scenario 3
 
