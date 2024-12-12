@@ -88,13 +88,11 @@ The history column stores location information in JSON format, and the important
 
 * In scenarios 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
 
-<img src = "/picture/locations.png" width='60%' height='60%'>
-
 #### 3. Changes after tag deletion 
 
 * In scenarios 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
 
-#### 4. Changes after tag deletion 
+#### 4. 
 
 * In scenarios 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
 
@@ -195,7 +193,6 @@ To verify the accuracy of the artifacts related to the tag's location informatio
 
 * Raw data is [here]
 
-<br>
 
 #### 3. Network data 
 
