@@ -48,7 +48,7 @@
 |7|[Service withdrawal](https://github.com/eininondumak/S.TASER/blob/main/Scenarios/7.md#7-service-withdrawal)|Withdrawing from the SmartThings service through ST|
 |8|[Application synchronization](https://github.com/eininondumak/S.TASER/blob/main/Scenarios/8.md#8-application-synchronization)|Comparison of results after location data deletion and STF and SF synchronization in multi-device environment|
 
-##### * The link of raw data is [here](https://drive.google.com/drive/folders/1s2BxegtkXpsS1GG6Ug07St_ODOSZsNsT?usp=drive_link )
+#### * The link of raw data is [here](https://drive.google.com/drive/folders/1s2BxegtkXpsS1GG6Ug07St_ODOSZsNsT?usp=drive_link )
 <br>
 
 ## 4. Artifacts structure of the proposal version (ST: 1.8.18.21)
