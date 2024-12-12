@@ -8,7 +8,7 @@
 
 ## 1. Samsung tracking tags
 
-|  <img src = "/picture/Smart_Tag.png" width = '200' height='200'>|  <img src = "/picture/Smart_Tag2.png" width = '200' height='200'>|  <img src = "picture/Solum.png" width = '200' height='200' >|
+|  <img src = "/picture/Smart_Tag.png" width = '300' height='300'>|  <img src = "/picture/Smart_Tag2.png" width = '300' height='300'>|  <img src = "picture/Solum.png" width = '300' height='300' >|
 |----------------------------------------|----------------------------------------|----------------------------------------|
 | Samart Tag | Smart Tag2|Solum Smart Tag|
 
@@ -48,7 +48,7 @@
 |7|[Service withdrawal](https://github.com/eininondumak/S.TASER/blob/main/Scenarios/7.md#7-service-withdrawal)|Withdrawing from the SmartThings service through ST|
 |8|[Application synchronization](https://github.com/eininondumak/S.TASER/blob/main/Scenarios/8.md#8-application-synchronization)|Comparison of results after location data deletion and STF and SF synchronization in multi-device environment|
 
-* Raw data is [here]
+##### * The link of raw data is [here](https://drive.google.com/drive/folders/1s2BxegtkXpsS1GG6Ug07St_ODOSZsNsT?usp=drive_link )
 <br>
 
 ## 4. Artifacts structure of the proposal version (ST: 1.8.18.21)
