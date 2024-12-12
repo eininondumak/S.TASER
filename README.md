@@ -169,7 +169,7 @@ The location information in SF is stored in the item_history table, containing t
 
 To verify the accuracy of the artifacts related to the tag's location information, GPS data was collected separately while the tags were in motion. The comparison of the location information analyzed in Scenarios 3 and 8 with GPS data from the same time periods is shown below. The analysis results accurately reflect the actual movement of the tags.
 
-* GPS data was collected every 2 seconds. The GPS data collected within a 5-second window before and after the timestamp of the analyzed location information was displayed on the map.
+\* GPS data was collected every 2 seconds. The GPS data collected within a 5-second window before and after the timestamp of the analyzed location information was displayed on the map.
 
 #### 1. Scenario 3
 
@@ -190,9 +190,23 @@ To verify the accuracy of the artifacts related to the tag's location informatio
 
 #### 3. Network data 
 
-* In scenarios 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
+In scenarios 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
 
-<img src = "/picture/locations.png" width='60%' height='60%'>
+In the previous study by Yu, T. et al. (2022)<sup>*</sup>, an API for retrieving location information from ST/STF was made publicly available. This study also confirmed that the API endpoint has not changed. Additionally, this research further identified a web API for retrieving location information from SF, as detailed below.
+
+\* Yu, T., Henderson, J., Tiu, A. and Haines, T., 2022. Privacy Analysis of Samsung’s Crowd-Sourced Bluetooth Location Tracking System. arXiv preprint. 2210.14702. viewed 29 September 2024. <https://arxiv.org/abs/2210.14702>.
+
+|Application| ST/STF | SF |
+|---------|---------|-----|
+|Host|api.smartthings.com |api.samsungfind.com|
+|API| POST /installedapps/[AppId]/execute HTTP/1.1 | GET /tag/devices/[Tag's deviceId]/geolocations HTTP/1.1|
+|Detail|<img src = "/picture/tag_gps1.png" width = '500' height='250'>|<img src = "/picture/tag_gps2.png" width = '500' height='250'> |
+
+
+
+```
+
+
 
 
 
