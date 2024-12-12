@@ -186,13 +186,13 @@ To verify the accuracy of the artifacts related to the tag's location informatio
 
 | <img src = "/picture/tag_gps1.png" width = '500' height='250'>|<img src = "/picture/tag_gps2.png" width = '500' height='250'> |
 |---------------------------------------------------------|---------------------------------------------------------|
-| * Blue: Clustered (Avg.) tag location data, Green: GPS | * Blue: Unclustered tag location data, Green: GPS|
+| * Blue: clustered (Avg.) tag location data, Green: GPS | * Blue: unclustered tag location data, Green: GPS|
 
 <br>
 
 | <img src = "/picture/tag_tag.png" width='100%' height='60%'>|
 |---------------------------------------------------------|
-| * Blue: Clustered tag location data, Green: Unclustered tag location data |
+| * Blue: clustered tag location data, Green: unclustered tag location data |
 
 
 
@@ -201,7 +201,7 @@ To verify the accuracy of the artifacts related to the tag's location informatio
 
 | <img src = "/picture/tag_gps3.png" width='100%' height='60%'>|
 |---------------------------------------------------------|
-| * Blue: Clustered tag location data, Green: GPS |
+| * Blue: clustered tag location data, Green: GPS |
 
 
 * Raw data is [here]
