@@ -74,7 +74,6 @@
 
 <br>
 
-
 ### 5. Tag information
 
 The structure of the location information database for STF and SF is almost identical.
