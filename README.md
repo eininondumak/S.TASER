@@ -74,15 +74,40 @@
 
 <br>
 
-### 5. Location data
+
+### 5. Tag information
+
+The structure of the location information database for STF and SF is almost identical.
+In the STF table structure, the location information is stored in the history column of the EncLocationHistory table in an encrypted form.
+The history column stores location information in JSON format, and the important fields (timestamp, geolocation) are as shown in the table below.
+
+#### 1. Network data 
+
+* In scenarios 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
+
+#### 2. Network data 
+
+* In scenarios 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
+
+<img src = "/picture/locations.png" width='60%' height='60%'>
+
+#### 3. Changes after tag deletion 
+
+* In scenarios 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
+
+#### 4. Changes after tag deletion 
+
+* In scenarios 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
+
+<br>
+
+### 6. Location data
 
 The structure of the location information database for STF and SF is almost identical.
 In the STF table structure, the location information is stored in the history column of the EncLocationHistory table in an encrypted form.
 The history column stores location information in JSON format, and the important fields (timestamp, geolocation) are as shown in the table below.
 
 <img src = "/picture/locations.png" width='60%' height='60%'>
-
-
 
 
 #### * Key elements in history column 
@@ -125,12 +150,11 @@ To verify the accuracy of the artifacts related to the tag's location informatio
 
 * Raw data is [here]
 
-### 6. Network data
+#### 3. Network data 
 
-* In scenarios 2 and 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
+* In scenarios 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
 
 <img src = "/picture/locations.png" width='60%' height='60%'>
 
-* Raw data is [here]
 
 
