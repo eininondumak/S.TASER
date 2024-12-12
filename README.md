@@ -8,7 +8,8 @@
 
 ## 1. Samsung tracking tags
 
-
+| ![Smart Tag](picture/Smart_Tag.png) | ![Smart Tag 2](picture/Smart_Tag2.png) | ![Solum](picture/Solum.png) |
+|----------------------------------------|----------------------------------------|----------------------------------------|
 
 
 
