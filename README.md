@@ -77,8 +77,17 @@
 ### 5. Tag information
 
 The structure of the location information database for STF and SF is almost identical.
-In the STF table structure, the location information is stored in the history column of the EncLocationHistory table in an encrypted form.
-The history column stores location information in JSON format, and the important fields (timestamp, geolocation) are as shown in the table below.
+
+|Order|Action|Identification data|Artifact|
+|----|---|----|----|
+|1|Search nearby tag|mnId, setupId|EasySetupIconNameDb.db|
+|2|Obtain registration info|mnId, setupId|Cache|
+|3|Check for duplicate logId|mnId, setupId, logId, modelName|Cache|
+|4|Registration completion|deviceId, modelName, label, mnId, setupId, logId|DataLayerData.db|
+|5|Information retrieval|deviceId|Cache|
+
+
+
 
 #### 1. Network data 
 
