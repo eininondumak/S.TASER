@@ -104,6 +104,47 @@ The history column stores location information in JSON format, and the important
 
 The structure of the location information database for STF and SF is almost identical.
 In the STF table structure, the location information is stored in the history column of the EncLocationHistory table in an encrypted form.
+
+The STF was decompiled using JADX, and the code for decrypting the location information was identified as shown in the figure below.
+
+
+
+
+#### Location_history decryption pesudo code
+
+```pseudo
+START
+
+    // Step 1: Input
+    encryptedText ← "Encrypted text in Base64"
+    keyAlias ← "com.samsung.android.plugin.fme.storage"  // Key alias
+
+    // Step 2: Base64 Decode
+    decodedData ← Base64.decode(encryptedText)
+
+    // Step 3: Retrieve Secret Key from Keystore
+    decryptionKey ← GetKeyFromKeystore(keyAlias)
+
+    // Step 4: Initialize Cipher for AES/GCM/NoPadding
+    cipher ← Cipher.getInstance("AES/GCM/NoPadding")
+    cipher.init(DECRYPT_MODE, decryptionKey, new GCMParameterSpec(128, decodedData, 0, 12))
+
+    // Step 5: Perform Decryption
+    decryptedData ← cipher.doFinal(decodedData, 12, decodedData.length - 12)
+
+    // Step 6: Convert Decrypted Data to UTF-8 String
+    decryptedText ← new String(decryptedData, Charset.forName("UTF-8"))
+
+    // Step 7: Return Decrypted Text
+    RETURN decryptedText
+
+END
+```
+
+<br>
+
+Accessing data stored in the Androidkeystore is very challenging. For this reason, in Scenario 3, a Frida script was used on a rooted device to dynamically decrypt the location information stored on the smartphone.
+
 The history column stores location information in JSON format, and the important fields (timestamp, geolocation) are as shown in the table below.
 
 <img src = "/picture/locations.png" width='60%' height='60%'>
