@@ -74,9 +74,16 @@
 
 <br>
 
-### 5. Tag information
+## 5. Tag registration
 
-The structure of the location information database for STF and SF is almost identical.
+#### 1. Overview
+During the tag registration process, various identification data is recorded in the application's database and web cache files.
+In the previous study by Yu, T. et al. (2022)<sup>1</sup>, the API calls between the ST and the server during the tag registration process reveal the fixed unique identifier of the tag, such as logId.
+This study primarily focuses on identifying artifacts stored on the device. However, it also introduces APIs that provide clues for discovering identification data stored on the device, based on network data before and after the tag registration.
+
+In actions 1 and 2 of the table below, the mnId and setupId values, which reveal the general model information of the tag, can be found. When a user registers the tag discovered, the application sends a query to the server to check whether the tag is already registered (action 3). At this stage, the logId can be identified. Once the tag registration is completed, the identification data of the registered tag is stored in the DataLayerData.db (action 4).
+
+Finally, after the tag registration is complete, the tag's status is checked, and the tag is displayed on the application's screen. By utilizing the API information called at this stage, it is possible to infer the initial registration time of the tag (action 5).
 
 |Order|Action|Identification data|Artifact|
 |----|---|----|----|
@@ -86,10 +93,7 @@ The structure of the location information database for STF and SF is almost iden
 |4|Registration completion|deviceId, modelName, label, mnId, setupId, logId|DataLayerData.db|
 |5|Information retrieval|deviceId|Cache|
 
-
-
-
-#### 1. Network data 
+#### 2. Network data 
 
 * In scenarios 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
 
@@ -107,7 +111,7 @@ The structure of the location information database for STF and SF is almost iden
 
 <br>
 
-### 6. Location data
+## 6. Location data
 
 The structure of the location information database for STF and SF is almost identical.
 In the STF table structure, the location information is stored in the history column of the EncLocationHistory table in an encrypted form.
@@ -207,15 +211,19 @@ To verify the accuracy of the artifacts related to the tag's location informatio
 
 In scenarios 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
 
-In the previous study by Yu, T. et al. (2022)<sup>*</sup>, an API for retrieving location information from ST/STF was made publicly available. This study also confirmed that the API endpoint has not changed. Additionally, this research further identified a web API for retrieving location information from SF, as detailed below.
+In the previous study by Yu, T. et al. (2022)<sup>1</sup>, an API for retrieving location information from ST/STF was made publicly available. This study also confirmed that the API endpoint has not changed. Additionally, this research further identified a web API for retrieving location information from SF, as detailed below.
 
-\* Yu, T., Henderson, J., Tiu, A. and Haines, T., 2022. Privacy Analysis of Samsung’s Crowd-Sourced Bluetooth Location Tracking System. arXiv preprint. 2210.14702. viewed 29 September 2024. <https://arxiv.org/abs/2210.14702>.
 
 |Application| ST/STF | SF |
 |---------|---------|-----|
 |Host|api.smartthings.com |api.samsungfind.com|
 |API| POST /installedapps/[AppId]/execute HTTP/1.1 | GET /tag/devices/[Tag's deviceId]/geolocations HTTP/1.1|
 |Detail|<img src = "/picture/oneconnect_request_body_for_location_history.png" width = '500' height='250'>|<img src = "/picture/samsung_find_api.png" width = '500' height='250'> |
+
+
+# References
+
+1. Yu, T., Henderson, J., Tiu, A. and Haines, T., 2022. Privacy Analysis of Samsung’s Crowd-Sourced Bluetooth Location Tracking System. arXiv preprint. 2210.14702. viewed 29 September 2024. <https://arxiv.org/abs/2210.14702>.
 
 
 
