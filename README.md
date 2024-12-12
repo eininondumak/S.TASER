@@ -8,11 +8,9 @@
 
 ## 1. Samsung tracking tags
 
-| ![Smart Tag](picture/Smart_Tag.png) | ![Smart Tag 2](picture/Smart_Tag2.png) | ![Solum](picture/Solum.png) |
+|  <img src = "/picture/Smart_Tag.png" width = '300' height='300'>|  <img src = "/picture/Smart_Tag2.png" width = '300' height='300'>|  <img src = "picture/Solum.png" width = '300' height='300' >|
 |----------------------------------------|----------------------------------------|----------------------------------------|
-
-
-
+| Samart Tag | Smart Tag2|Solum Smart Tag|
 
 
 ## 2. Applications
@@ -116,11 +114,10 @@ To verify the accuracy of the artifacts related to the tag's location informatio
 
 #### 1. Scenario 3
 
-* Blue: Clustered (Avg.) tag location data, Green: GPS
-<img src = "/picture/tag_gps1.png" width='60%' height='60%'>
+| <img src = "/picture/tag_gps1.png" width = '500' height='250'>|<img src = "/picture/tag_gps2.png" width = '500' height='250'> |
+|---------------------------------------------------------|---------------------------------------------------------|
+| * Blue: Clustered (Avg.) tag location data, Green: GPS | * Blue: Unclustered tag location data, Green: GPS|
 
-* Blue: Unclustered tag location data, Green: GPS
-<img src = "/picture/tag_gps2.png" width='60%' height='60%'>
 
 * Blue: Clustered tag location data, Green: Unclustered tag location data
 <img src = "/picture/tag_tag.png" width='60%' height='60%'>
