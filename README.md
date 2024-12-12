@@ -177,16 +177,25 @@ To verify the accuracy of the artifacts related to the tag's location informatio
 |---------------------------------------------------------|---------------------------------------------------------|
 | * Blue: Clustered (Avg.) tag location data, Green: GPS | * Blue: Unclustered tag location data, Green: GPS|
 
+<br>
 
-* Blue: Clustered tag location data, Green: Unclustered tag location data
-<img src = "/picture/tag_tag.png" width='60%' height='60%'>
+| <img src = "/picture/tag_tag.png" width='100%' height='60%'>|
+|---------------------------------------------------------|
+| * Blue: Clustered tag location data, Green: Unclustered tag location data |
+
+
 
 #### 2. Scenario 8
 
-* Blue: Clustered tag location data, Green: GPS
-<img src = "/picture/tag_gps3.png" width='60%' height='60%'>
+
+| <img src = "/picture/tag_gps3.png" width='100%' height='60%'>|
+|---------------------------------------------------------|
+| * Blue: Clustered tag location data, Green: GPS |
+
 
 * Raw data is [here]
+
+<br>
 
 #### 3. Network data 
 
@@ -200,11 +209,7 @@ In the previous study by Yu, T. et al. (2022)<sup>*</sup>, an API for retrieving
 |---------|---------|-----|
 |Host|api.smartthings.com |api.samsungfind.com|
 |API| POST /installedapps/[AppId]/execute HTTP/1.1 | GET /tag/devices/[Tag's deviceId]/geolocations HTTP/1.1|
-|Detail|<img src = "/picture/tag_gps1.png" width = '500' height='250'>|<img src = "/picture/tag_gps2.png" width = '500' height='250'> |
-
-
-
-```
+|Detail|<img src = "/picture/oneconnect_request_body_for_location_history.png" width = '500' height='250'>|<img src = "/picture/samsung_find_api.png" width = '500' height='250'> |
 
 
 
