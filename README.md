@@ -8,10 +8,11 @@
 
 ## 1. Samsung tracking tags
 
-|  <img src = "/picture/Smart_Tag.png" width = '300' height='300'>|  <img src = "/picture/Smart_Tag2.png" width = '300' height='300'>|  <img src = "picture/Solum.png" width = '300' height='300' >|
+|  <img src = "/picture/Smart_Tag.png" width = '200' height='200'>|  <img src = "/picture/Smart_Tag2.png" width = '200' height='200'>|  <img src = "picture/Solum.png" width = '200' height='200' >|
 |----------------------------------------|----------------------------------------|----------------------------------------|
 | Samart Tag | Smart Tag2|Solum Smart Tag|
 
+<br>
 
 ## 2. Applications
 
@@ -29,6 +30,8 @@
 | <img src="picture/Tag%20registration.jpg" width="150"> | <img src="picture/SmartThings%20Find.jpg" width="150"> | <img src="picture/Tag%20deletion.jpg" width="150"> |  <img src="picture/Location%20deletion%20SF.jpg" width="150"> |  <img src="picture/Sign%20out.jpg" width="150"> |  <img src="picture/Leave%20service.jpg" width="150"> | 
 |-----------------------|----------------------------------|---------------------|------------------------------------|--------------------|----------------------------------|
 | Tag registration | Location data retrieval | Tag deletion | Location deletion | Account logout | Service withdrawal  |
+
+<br>
 
 
 ## 3. Experimental scenarios and results
