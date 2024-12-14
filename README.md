@@ -21,7 +21,7 @@
 |---|---|---|---|
 |SmartThings (ST)|1.8.18.21|1.8.21.28|Rooting detection adpoted |
 |SmartThings Find (STF)|1.8.21.28|1.8.27-10||
-|Samsubg Find (SF)|1.3.12|1.4.00.10||
+|Samsung Find (SF)|1.3.12|1.4.00.10||
 
 <br>
 
