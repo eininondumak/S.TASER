@@ -130,17 +130,16 @@ When a deleted deviceId is found, the get_tag_information function attempts to r
 
 For each individual scenario, the tool checked whether the deviceIds of all registered tags could be identified from the last forensic image. In cases where a deleted deviceId was found, the tool attempted to recover identifier information such as the logId. The results are summarized in the table below.
 
-|Experiment name|Raw data|S.TASER|Source|
+|Experiment name|Raw data<br>Total deviceId (Deletion)|S.TASER<br>deviceId (Recover)|Source|
 |----|---|----|----|
-||Total deviceId (Deletion)|deviceId (Recover)|----|
-|Basic artifact structure|4 (0)|4 (0)|----|
-|Tracking tag registration|3 (1)|3 (1)|----|
+|Basic artifact structure|4 (0)|4 (0)|20241203-S1-default, s0-latest-white-second|
+|Tracking tag registration|3 (1)|3 (1)|241201_S2_oneconnect-2|
 |Location data retrieval|N/A|N/A|----|
-|Registered tracking tag deletion|4 (2)|4 (2)|----|
+|Registered tracking tag deletion|4 (2)|4 (2)|s4-5|
 |Location data deletion|N/A|N/A|----|
-|Account logout|4 (4)|4 (2)|----|
-|Service withdrawal|1 (1)|1 (1)|----|
-|Application synchronization|2 (1)|2 (1)|----|
+|Account logout|4 (4)|4 (2)|s6-1|
+|Service withdrawal|1 (1)|1 (1)|s7-2|
+|Application synchronization|2 (1)|2 (1)|s8-device1-4|
 
 <br>
 
