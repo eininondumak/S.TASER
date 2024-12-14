@@ -23,6 +23,8 @@
 |SmartThings Find (STF)|1.8.21.28|1.8.27-10||
 |Samsubg Find (SF)|1.3.12|1.4.00.10||
 
+<br>
+
 
 ### * Applications' functions in the experiments
 
@@ -50,6 +52,7 @@
 
 #### * The link of raw data is [here](https://drive.google.com/drive/folders/1urp38_Q--hbl450xpTpi4eGf80vsOpbZ?usp=drive_link)
 
+<br>
 
 ## 4. Artifacts structure of the proposal version (ST: 1.8.18.21)
 
@@ -108,15 +111,26 @@ Finally, after the tag registration is complete, the tag's status is checked, an
 
 #### 3. Recovery of deleted tag's information
 
-* In scenarios 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
+In this study, the identification information of deleted tags is recovered as follows, and implemented in the tag_parser.py of S.TAGER.
 
-#### 3. Changes after tag deletion 
+The recovery process combines information that still exists after deletion, excluding methods such as SQLite WAL carving.
 
-* In scenarios 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
+1. Identification of the deleted Tag's deviceId
+The deviceIds of all registered tags are stored in internalsettings.db, and remain even if the user deletes a tag. The deviceIds of live tags are found in DataLayerData.db. The presence of a deleted tag is determined by comparing the values between internalsettings.db and DataLayerData.db (handled by the search_deletedTag function).
 
-#### 4. 
+2. Recovery of Deleted Tag Information
+When a deleted deviceId is found, the get_tag_information function attempts to recover it using the following methods:
 
-* In scenarios 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
+* Check DataLayerData_core.db, which contains the same information as DataLayerData.db, to find the presence of the deleted deviceId.
+* Search PersistentLogData.db to locate the deletion logs of the tag and recover the information.
+* Finally, based on the deleted tag's deviceId, search for cache files relating APIs (client.smartthings.com/devices/status, client.smartthings.com/presentation) called immediately after the tag registration. Once the cache file is found, search for adjacent duplicate registration confirmation API call (client.smartthings.com/chaser/trackers/lostmessage) at the time the cache file was generated, to recover information such as logId.
+
+#### 4. Changes after tag deletion 
+
+* As tags are deleted, the identification information of the deleted tags is removed from DataLayerData.db, but the cache files that contain the API calls, as mentioned earlier, still exist.
+
+* 
+If a deleted tag is re-registered, the API is called again during the tag registration process, which results in a change in the creation time of the cache. As a result, it becomes difficult to verify the information of the previously deleted tag.
 
 <br>
 
