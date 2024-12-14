@@ -131,6 +131,8 @@ When a deleted deviceId is found, the get_tag_information function attempts to r
 
 * If a deleted tag is re-registered, the API is called again during the tag registration process, which results in a change in the creation time of the cache. As a result, it becomes difficult to verify the information of the previously deleted tag.
 
+<img src = "/picture/tag-deletion.png" width='70%' height='70%'>
+
 * Additionally, in the case of account logout or service withdrawal, the cache files are deleted, making it impossible to verify the information of the deleted tag.
   
 <br>
