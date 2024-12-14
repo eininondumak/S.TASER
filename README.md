@@ -17,7 +17,7 @@
 ## 2. Applications
 
 
-|Name|Proposal Ver.|Camera-ready Ver.|etc.|
+|Name|Proposal ver.|Camera-ready ver.|etc.|
 |---|---|---|---|
 |SmartThings (ST)|1.8.18.21|1.8.21.28|Rooting detection adpoted |
 |SmartThings Find (STF)|1.8.21.28|1.8.27-10||
@@ -49,7 +49,7 @@
 |8|[Application synchronization](https://github.com/eininondumak/S.TASER/blob/main/Scenarios/8.md#8-application-synchronization)|Comparison of results after location data deletion and STF and SF synchronization in multi-device environment|
 
 #### * The link of raw data is [here](https://drive.google.com/drive/folders/1urp38_Q--hbl450xpTpi4eGf80vsOpbZ?usp=drive_link)
-<br>
+
 
 ## 4. Artifacts structure of the proposal version (ST: 1.8.18.21)
 
