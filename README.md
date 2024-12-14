@@ -213,6 +213,9 @@ In scenarios 3, network data between the smartphone and the server was collected
 
 In the previous study by Yu, T. et al. (2022)<sup>1</sup>, an API for retrieving location information from ST/STF was made publicly available. This study also confirmed that the API endpoint has not changed. Additionally, this research further identified a web API for retrieving location information from SF, as detailed below.
 
+\* captured files are in the Scenario 3 folder.
+
+
 
 |Application| ST/STF | SF |
 |---------|---------|-----|
