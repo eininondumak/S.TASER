@@ -10,7 +10,7 @@
 
 |  <img src = "/picture/Smart_Tag.png" width = '300' height='300'>|  <img src = "/picture/Smart_Tag2.png" width = '300' height='300'>|  <img src = "picture/Solum.png" width = '300' height='300' >|
 |----------------------------------------|----------------------------------------|----------------------------------------|
-| Samart Tag | Smart Tag2|Solum Smart Tag|
+| Smart Tag | Smart Tag2|Solum Smart Tag|
 
 <br>
 
