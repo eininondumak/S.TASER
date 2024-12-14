@@ -98,7 +98,7 @@ Finally, after the tag registration is complete, the tag's status is checked, an
 
 #### 2. Network data 
 
-* During the tag registration process, the server's API is called. The application contains cache files related to this process, and the tool explores the cache of API calls as shown in the table below to discover identification information. Specifically, step 3, 4 is called after the tag is registered, to check the [status](https://developer.smartthings.com/docs/api/public#tag/Devices)<sup>2</sup> of the registered tag and [present](https://developer.smartthings.com/docs/api/public#tag/Presentations)<sup>2</sup> the tag on the application's screen.
+* During the tag registration process, the server's API is called. The application contains cache files related to this process, and the tool explores the cache of API calls as shown in the table below to discover identification information. The step 3, 4 is called after the tag is registered, to check the [status](https://developer.smartthings.com/docs/api/public#tag/Devices)<sup>2</sup> of the registered tag and [present](https://developer.smartthings.com/docs/api/public#tag/Presentations)<sup>2</sup> the tag on the application's screen.
 
 |Order|Action|API|Identification data|
 |----|---|----|----|
