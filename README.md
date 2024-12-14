@@ -125,7 +125,26 @@ When a deleted deviceId is found, the get_tag_information function attempts to r
 * Search PersistentLogData.db to locate the deletion logs of the tag and recover the information.
 * Finally, based on the deleted tag's deviceId, search for cache files relating APIs (client.smartthings.com/devices/status, client.smartthings.com/presentation) called immediately after the tag registration. Once the cache file is found, search for adjacent duplicate registration confirmation API call (client.smartthings.com/chaser/trackers/lostmessage) at the time the cache file was generated, to recover information such as logId.
 
-#### 4. Changes after tag deletion 
+
+#### 4. S.TASER results (Tag information analysis)
+
+For each individual scenario, the tool checked whether the deviceIds of all registered tags could be identified from the last forensic image. In cases where a deleted deviceId was found, the tool attempted to recover identifier information such as the logId. The results are summarized in the table below.
+
+|Experiment name|Raw data|S.TASER|Source|
+|----|---|----|----|
+||Total deviceId (Deletion)|deviceId (Recover)|----|
+|Basic artifact structure|4 (0)|4 (0)|----|
+|Tracking tag registration|3 (1)|3 (1)|----|
+|Location data retrieval|N/A|N/A|----|
+|Registered tracking tag deletion|4 (2)|4 (2)|----|
+|Location data deletion|N/A|N/A|----|
+|Account logout|4 (4)|4 (2)|----|
+|Service withdrawal|1 (1)|1 (1)|----|
+|Application synchronization|2 (1)|2 (1)|----|
+
+<br>
+
+#### 5. Changes after tag deletion 
 
 * As tags are deleted, the identification information of the deleted tags is removed from DataLayerData.db, but the cache files that contain the API calls, as mentioned earlier, still exist.
 
