@@ -95,7 +95,7 @@ Finally, after the tag registration is complete, the tag's status is checked, an
 
 #### 2. Network data 
 
-* During the tag registration process, the server's API is called. The application contains cache files related to this process, and the tool explores the cache of API calls as shown in the table below to discover identification information. Specifically, step 3, 4 is called after the tag is registered, to check the status of the registered tag and display the tag on the application's screen.
+* During the tag registration process, the server's API is called. The application contains cache files related to this process, and the tool explores the cache of API calls as shown in the table below to discover identification information. Specifically, step 3, 4 is called after the tag is registered, to check the [status](https://developer.smartthings.com/docs/api/public#tag/Devices)<sup>2</sup> of the registered tag and [present](https://developer.smartthings.com/docs/api/public#tag/Presentations)<sup>2</sup> the tag on the application's screen.
 
 |Order|Action|API|Identification data|
 |----|---|----|----|
@@ -103,6 +103,8 @@ Finally, after the tag registration is complete, the tag's status is checked, an
 |2|Check for duplicate logId|client.smartthings.com/chaser/trackers/lostmessage|mnId, setupId, logId, modelName|
 |3|Information retrieval|client.smartthings.com/devices/status|deviceId|
 |4|Information retrieval|client.smartthings.com/presentation|deviceId|  
+
+\* captured files are in the Scenario 2 folder.
 
 #### 3. Recovery of deleted tag's information
 
@@ -234,6 +236,7 @@ In the previous study by Yu, T. et al. (2022)<sup>1</sup>, an API for retrieving
 # References
 
 1. Yu, T., Henderson, J., Tiu, A. and Haines, T., 2022. Privacy Analysis of Samsung’s Crowd-Sourced Bluetooth Location Tracking System. arXiv preprint. 2210.14702. viewed 29 September 2024. <https://arxiv.org/abs/2210.14702>.
+2. SmartThings Developers, SmartThings API (1.0-PREVIEW), viewed 13 December 2024. <https://developer.smartthings.com/docs/api/public>.
 
 
 
