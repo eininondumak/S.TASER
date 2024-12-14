@@ -129,9 +129,10 @@ When a deleted deviceId is found, the get_tag_information function attempts to r
 
 * As tags are deleted, the identification information of the deleted tags is removed from DataLayerData.db, but the cache files that contain the API calls, as mentioned earlier, still exist.
 
-* 
-If a deleted tag is re-registered, the API is called again during the tag registration process, which results in a change in the creation time of the cache. As a result, it becomes difficult to verify the information of the previously deleted tag.
+* If a deleted tag is re-registered, the API is called again during the tag registration process, which results in a change in the creation time of the cache. As a result, it becomes difficult to verify the information of the previously deleted tag.
 
+* Additionally, in the case of account logout or service withdrawal, the cache files are deleted, making it impossible to verify the information of the deleted tag.
+  
 <br>
 
 ## 6. Location data
