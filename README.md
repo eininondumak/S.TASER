@@ -134,9 +134,9 @@ For each individual scenario, the tool checked whether the deviceIds of all regi
 |----|---|----|----|
 |Basic artifact structure|4 (0)|4 (0)|20241203-S1-default, s0-latest-white-second|
 |Tracking tag registration|3 (1)|3 (1)|241201_S2_oneconnect-2|
-|Location data retrieval|N/A|N/A|----|
+|Location data retrieval|N/A|N/A||
 |Registered tracking tag deletion|4 (2)|4 (2)|s4-5|
-|Location data deletion|N/A|N/A|----|
+|Location data deletion|N/A|N/A||
 |Account logout|4 (4)|4 (2)|s6-1|
 |Service withdrawal|1 (1)|1 (1)|s7-2|
 |Application synchronization|2 (1)|2 (1)|s8-device1-4|
