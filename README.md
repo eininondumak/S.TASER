@@ -95,9 +95,16 @@ Finally, after the tag registration is complete, the tag's status is checked, an
 
 #### 2. Network data 
 
-* In scenarios 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
+* During the tag registration process, the server's API is called. The application contains cache files related to this process, and the tool explores the cache of API calls as shown in the table below to discover identification information. Specifically, step 3, 4 is called after the tag is registered, to check the status of the registered tag and display the tag on the application's screen.
 
-#### 2. Network data 
+|Order|Action|API|Identification data|
+|----|---|----|----|
+|1|Obtain registration info|api.smartthings.com/catalogs/api/v3/easysetup/setupdata|mnId, setupId|
+|2|Check for duplicate logId|client.smartthings.com/chaser/trackers/lostmessage|mnId, setupId, logId, modelName|
+|3|Information retrieval|client.smartthings.com/devices/status|deviceId|
+|4|Information retrieval|client.smartthings.com/presentation|deviceId|  
+
+#### 3. Recovery of deleted tag's information
 
 * In scenarios 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
 
