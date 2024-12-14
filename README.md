@@ -248,7 +248,7 @@ To verify the accuracy of the artifacts related to the tag's location informatio
 | * Blue: clustered tag location data, Green: GPS |
 
 
-* Raw data is [here](Rawdata)
+* Raw data is in the Scenario 3 folder.
 
 
 #### 3. Network data 
