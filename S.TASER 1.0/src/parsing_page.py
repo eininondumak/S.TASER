@@ -297,7 +297,7 @@ def render_location_map(location_data) -> None:
                     icon="arrow-down",
                     icon_shape="circle",
                     border_width=2,
-                    number=index + 1,
+                    number=index,
                     background_color=random_color,
                 ),
                 tooltip=f"Time: {row['StartTime(UTC)']}, Count: {row['Count']}",
