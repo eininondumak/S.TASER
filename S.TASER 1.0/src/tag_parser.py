@@ -780,6 +780,9 @@ def get_tag_information(db_path, deviceId, deleted):
                 # Pattern recovery
                 #Q4
                 logone = sq.fetch_query(db_path, qu.Q4_SQL, (deviceId,))
+                # flags = 0 (fail), 1 (succuess)
+                recovery_flags = 0
+
                 if logone is not None:
                     for taginfo in logone:
                         info_patten = ['client.smartthings.com/devices/status?includeUserDevices=true&excludeLocationDevices=false&deviceId=',
@@ -789,7 +792,7 @@ def get_tag_information(db_path, deviceId, deleted):
                             #Q5
                             results = sq.fetch_query(db_path, qu.Q5_SQL, (registered_time, registered_time,))
                             if results is not None:
-                                # found 'Register from webcache' in infotype
+                                # found 'Register from webcache or Register from db' in infotype
                                 for i, log in enumerate(results):
                                     registrationTime = log['timestamp']
                                     if log['infotype'] == 'Register from webcache':
@@ -804,16 +807,15 @@ def get_tag_information(db_path, deviceId, deleted):
                                             df.loc[len(df)] = new_data
 
                                             print_tag_information(deviceId, "recovered", "pattern", taglabel, tagmodel, tagmnid, tagsetupid, taglogId, registrationTime)
+                                            recovery_flags = 1
 
-                            else:
-                                # Not found 'Register from webcache' in infotype -> fail
-                                new_data = [deviceId, "deleted", "pattern", taglabel, tagmodel, tagmnid, tagsetupid, taglogId, registrationTime]
-                                df.loc[len(df)] = new_data
 
-                                print_tag_information(deviceId, "deleted", "pattern", taglabel, tagmodel, tagmnid, tagsetupid, taglogId, registrationTime)
-                
-                else:
-                    # Recovery fail, because of no webcache
+                        if recovery_flags != 1:
+                            # every fail case with webcache
+                            registrationTime = registered_time
+            
+                if recovery_flags != 1:
+                    # put failcase data in dataframe    
                     new_data = [deviceId, "deleted", "pattern", taglabel, tagmodel, tagmnid, tagsetupid, taglogId, registrationTime]
                     df.loc[len(df)] = new_data
 
