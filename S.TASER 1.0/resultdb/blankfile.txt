@@ -1,1 +1,1 @@
-blankfile
+This folder is the path for the artifact sqlite database.
