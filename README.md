@@ -197,7 +197,7 @@ END
 ```
 <br>
 
-Accessing data stored in the Androidkeystore is very challenging. For this reason, in Scenario 3, the [Frida script](frida_dynamic_decrypt.java) was used on a rooted device to dynamically decrypt the location information stored on the smartphone.
+Accessing data stored in the Androidkeystore is very challenging. For this reason, in Scenario 3, the Frida script was used on a rooted device to dynamically decrypt the location information stored on the smartphone.
 
 The history column stores location information in JSON format, and the important fields (timestamp, geolocation) are as shown in the table below.
 
