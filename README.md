@@ -17,7 +17,7 @@
 ## 2. Applications
 
 
-|Name|Proposal ver.|Camera-ready ver.|etc.|
+|Name|Proposal version|Camera-ready version|etc.|
 |---|---|---|---|
 |SmartThings (ST)|1.8.18.21|1.8.21.28|Rooting detection adpoted |
 |SmartThings Find (STF)|1.8.21.28|1.8.27-10||
@@ -81,8 +81,8 @@
 
 #### 1. Overview
 During the tag registration process, various identification data is recorded in the application's database and web cache files.
-In the previous study by Yu, T. et al. (2022)<sup>1</sup>, the API calls between the ST and the server during the tag registration process reveal the fixed unique identifier of the tag, such as logId.
-This study primarily focuses on identifying artifacts stored on the device. However, it also introduces APIs that provide clues for discovering identification data stored on the device, based on network data before and after the tag registration.
+In the previous study by Yu, T. et al. (2022)<sup>1</sup>, the API calls between the ST and the server during the tag registration process reveal various identification data such as the fixed unique identifier of the tag (logId).
+Our study primarily focuses on identifying artifacts stored on the device. However, it also introduces APIs that provide clues for discovering identification data stored on the device, based on network data before and after the tag registration.
 
 In actions 1 and 2 of the table below, the mnId and setupId values, which reveal the general model information of the tag, can be found. When a user registers the tag discovered, the application sends a query to the server to check whether the tag is already registered (action 3). At this stage, the logId can be identified. Once the tag registration is completed, the identification data of the registered tag is stored in the DataLayerData.db (action 4).
 
@@ -98,7 +98,7 @@ Finally, after the tag registration is complete, the tag's status is checked, an
 
 #### 2. Network data 
 
-* During the tag registration process, the server's API is called. The application contains cache files related to this process, and the tool explores the cache of API calls as shown in the table below to discover identification information. The step 3, 4 is called after the tag is registered, to check the [status](https://developer.smartthings.com/docs/api/public#tag/Devices)<sup>2</sup> of the registered tag and [present](https://developer.smartthings.com/docs/api/public#tag/Presentations)<sup>2</sup> the tag on the application's screen.
+* During the tag registration process, the server's APIs are called. The application contains cache files related to this process, and the tool explores the cache of API calls as shown in the table below to discover identification information. The step 3 and 4 are called after the tag is registered, to check the [status](https://developer.smartthings.com/docs/api/public#tag/Devices)<sup>2</sup> of the registered tag and [present](https://developer.smartthings.com/docs/api/public#tag/Presentations)<sup>2</sup> the tag on the application's screen.
 
 |Order|Action|API|Identification data|
 |----|---|----|----|
@@ -107,19 +107,19 @@ Finally, after the tag registration is complete, the tag's status is checked, an
 |3|Information retrieval|client.smartthings.com/devices/status|deviceId|
 |4|Information retrieval|client.smartthings.com/presentation|deviceId|  
 
-\* captured files are in the Scenario 2 folder.
+\* captured network data files are in the Scenario 2 folder.
 
-#### 3. Recovery of deleted tag's information
+#### 3. Recovery of deleted tag information
 
 In this study, the identification information of deleted tags is recovered as follows, and implemented in the tag_parser.py of S.TAGER.
 
-The recovery process combines information that still exists after deletion, excluding methods such as SQLite WAL carving.
+The recovery process combines information that still exists after deletion, excluding carving data such as SQLite WAL carving.
 
 1. Identification of the deleted Tag's deviceId
-The deviceIds of all registered tags are stored in internalsettings.db, and remain even if the user deletes a tag. The deviceIds of live tags are found in DataLayerData.db. The presence of a deleted tag is determined by comparing the values between internalsettings.db and DataLayerData.db (handled by the search_deletedTag function).
+The deviceIds of all registered tags are stored in internalsettings.db, and remain even if the user deletes a tag. The deviceIds of live tags are found in DataLayerData.db. The presence of a deleted tag is determined by comparing the values between these databases (handled by the search_deletedTag function).
 
-2. Recovery of Deleted Tag Information
-When a deleted deviceId is found, the get_tag_information function attempts to recover it using the following methods:
+2. Recovery of deleted Tag Information
+When a deleted deviceId is found, the 'get_tag_information' function attempts to recover it using the following methods:
 
 * Check DataLayerData_core.db, which contains the same information as DataLayerData.db, to find the presence of the deleted deviceId.
 * Search PersistentLogData.db to locate the deletion logs of the tag and recover the information.
@@ -147,27 +147,27 @@ For each individual scenario, the tool checked whether the deviceIds of all regi
 
 * As tags are deleted, the identification information of the deleted tags is removed from DataLayerData.db, but the cache files that contain the API calls, as mentioned earlier, still exist.
 
-* If a deleted tag is re-registered, the API is called again during the tag registration process, which results in a change in the creation time of the cache. As a result, it becomes difficult to verify the information of the previously deleted tag.
+* If a deleted tag is re-registered, the API is called again during the tag registration process, which results in a change in the creation time of the cache. As a result, it becomes difficult to find the information of the previously deleted tag.
 
 <img src = "/picture/tag-deletion.png" width='70%' height='70%'>
 
-* Additionally, in the case of account logout or service withdrawal, the cache files are deleted, making it impossible to verify the information of the deleted tag.
+* Additionally, in the case of account logout or service withdrawal, the cache files are deleted, making it impossible to find the information of the deleted tag.
   
 <br>
 
 ## 6. Location data
 
 The structure of the location information database for STF and SF is almost identical.
-In the STF table structure, the location information is stored in the history column of the EncLocationHistory table in an encrypted form.
+In the STF table structure, the location information is stored in the history column of the EncLocationHistory table in an encrypted format.
 
 The STF was decompiled using JADX, and the code for decrypting the location information was identified as shown in the figure below.
 
 <img src = "/picture/decryption.png" width='70%' height='70%'>
 
 
-#### * Location_history decryption pesudo code
+#### * Location_history decryption pesudo-code
 
-```pseudo
+```
 START
 
     // Step 1: Input
@@ -218,7 +218,7 @@ The history column stores location information in JSON format, and the important
 
 <br>
 
-The location information in SF is stored in the item_history table, containing the same data as STF. However, the 'locations' key-value present in STF is not found in SF.
+The location information in SF is stored in the item_history table, containing the same data as STF. However, the 'locations' key-values present in STF is not found in SF.
 
 #### * Compare the location data from the apps with real-world GPS data
 
@@ -253,9 +253,9 @@ To verify the accuracy of the artifacts related to the tag's location informatio
 
 #### 3. Network data 
 
-In scenarios 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
+In scenario 3, network data between the smartphone and the server was collected. The APIs requested by the application to the server during the tag registration and location information retrieval processes were identified as follows.
 
-In the previous study by Yu, T. et al. (2022)<sup>1</sup>, an API for retrieving location information from ST/STF was made publicly available. This study also confirmed that the API endpoint has not changed. Additionally, this research further identified a web API for retrieving location information from SF, as detailed below.
+In the previous study by Yu, T. et al. (2022)<sup>1</sup>, an API for retrieving location information from ST/STF was made publicly available. This study also confirmed that the API endpoint has not changed. Additionally, this research further identified the API for retrieving location information from SF, as detailed below.
 
 \* captured files are in the Scenario 3 folder.
 
