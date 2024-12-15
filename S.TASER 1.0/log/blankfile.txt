@@ -1,1 +1,1 @@
-blankfile.txt
+This folder is the path for the logfile.
