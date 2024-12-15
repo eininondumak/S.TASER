@@ -220,7 +220,7 @@ Q4_SQL = """
     FROM tagActivity
     WHERE deviceId = ?
         AND infotype = 'webcache'
-    ORDER BY timestamp ASC;
+    ORDER BY timestamp DESC;
 """
 
 Q5_SQL = """
