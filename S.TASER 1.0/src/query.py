@@ -226,7 +226,7 @@ Q4_SQL = """
 Q5_SQL = """
     SELECT *
     FROM tagActivity
-    WHERE timestamp BETWEEN datetime(?, '-3 minutes') AND datetime(?)
+    WHERE timestamp BETWEEN datetime(?, '-2 minutes') AND datetime(?)
         AND deviceId = ''
         AND infotype LIKE 'Register%'
     ORDER BY timestamp ASC;
