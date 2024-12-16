@@ -197,7 +197,7 @@ def parse_PersistentLogData(spath, db_path) -> bool:
 
     deviceId_pattern = r'deviceId=(?:(?:[0-9a-fA-F]{32})|(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})|(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-\*{4}-\*{4}-[0-9a-fA-F]{12}))'
 
-    ＃deviceId_pattern = r'deviceId=(?:(?:[0-9a-fA-F]{32})|(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}))'
+    #deviceId_pattern = r'deviceId=(?:(?:[0-9a-fA-F]{32})|(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}))'
 
     action_added = 'added     :'
     action_removed = 'removed   :'
@@ -555,9 +555,9 @@ def search_deviceId_in_cache(cpath, db_path):
     oneconnect_cache_dir = ['http-Core', 'http-Main',
                             'http-PluginNativeFME', 'http-PluginWebApplication']
                             
-    ＃patterns = [
-    ＃    r'client\.smartthings\.com/presentation\?deviceId=(?:(?:[0-9a-fA-F]{32})|(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}))',
-    ＃    r'client\.smartthings\.com/devices/status\?includeUserDevices=true&excludeLocationDevices=false&deviceId=(?:(?:[0-9a-fA-F]{32})|(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}))']
+    #patterns = [
+    #    r'client\.smartthings\.com/presentation\?deviceId=(?:(?:[0-9a-fA-F]{32})|(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}))',
+    #    r'client\.smartthings\.com/devices/status\?includeUserDevices=true&excludeLocationDevices=false&deviceId=(?:(?:[0-9a-fA-F]{32})|(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}))']
 
     patterns = [
     r'client\.smartthings\.com/presentation\?deviceId=(?:(?:[0-9a-fA-F]{32})|(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})|(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-\*{4}-\*{4}-[0-9a-fA-F]{12}))',
@@ -592,7 +592,7 @@ def find_files_with_deviceId(directory, search_string):
 
     deviceId_pattern = r'(?:(?:[0-9a-fA-F]{32})|(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})|(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-\*{4}-\*{4}-[0-9a-fA-F]{12}))'
 
-    ＃deviceId_pattern = r'(?:(?:[0-9a-fA-F]{32})|(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}))'
+    #deviceId_pattern = r'(?:(?:[0-9a-fA-F]{32})|(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}))'
 
     time_pattern = r'date:\s*(.*?)\s*GMT'
 
@@ -731,7 +731,7 @@ def get_tag_information(db_path, deviceId, deleted):
                         keywordlabel = r"label=([^,]+), manufacturerCode="
                         keywordlogId = r"identifier=([A-Za-z0-9]*[A-Za-z0-9]{1}\*{4}[A-Za-z0-9]*|[A-Za-z0-9]+),"
 
-                        ＃keywordlogId = r"identifier=([A-Za-z0-9]+),"
+                        #keywordlogId = r"identifier=([A-Za-z0-9]+),"
 
                         keywordVender = r'"vendor":\{"mnId":"(?P<mnId>[^"]+)","setupId":"(?P<setupId>[^"]+)","modelName":"(?P<modelName>[^"]+)"\}'
                         keywordData = r'"createTime":(\d+)'
