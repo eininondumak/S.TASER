@@ -72,7 +72,7 @@
 |cache Files|○||○|○||○||
 |com.samsung.android.plugin-<br>platform.pluginbase-<br>.sdk.PluginSQLiteQpenHelper.-<br>[AppId].location_history  * Encrypted|○||||||○|
 |app-database.db (item_history)|○||||||○|
-|find-sdk (TagDeolocation) <br> * Encrypted|○||||||○|
+|find-sdk (TagGeolocation) <br> * Encrypted|○||||||○|
 * app-database.db and find-sdk are artifacts of SF, The others are artifacts of ST/STF
 
 <br>
